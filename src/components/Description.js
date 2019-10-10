@@ -3,14 +3,23 @@ import styled from "styled-components";
 
 const P = styled.p`
   color: white;
+  width: 60%;
+  font-weight: bold;
 `;
 
+const ExBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+  padding-top: 5%;
+`;
 
 const Description = props => {
   return (
-    <div className="description-container">
+    <ExBox className="description-container">
         <P>{props.photoDesc}</P>
-    </div>
+    </ExBox>
   );
 };
 
