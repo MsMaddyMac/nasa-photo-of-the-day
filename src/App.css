@@ -31,3 +31,49 @@
     transform: rotate(360deg);
   }
 }
+.title h1:nth-child(1){
+  width: 27rem;
+  opacity: 0;
+  -webkit-animation: type 1.5s steps(40, end), blink .8s step-end infinite;
+  animation: type 1.5s steps(40, end), blink .8s step-end infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type{
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+

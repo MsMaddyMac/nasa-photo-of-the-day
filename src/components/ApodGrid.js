@@ -22,22 +22,16 @@ export default function ApodGrid() {
 
     return(
         <div className="container">
-            <div className="header">
-                <Header 
+            <Header 
                 photoDate={photoData.date}
-                />
-            </div>
-            <div className="image">
-                <Photo
+            />
+            <Photo
                 photoTitle={photoData.title}
                 photoData={photoData.url}
-                />
-                <div className="explanation">
-                    <Description 
-                    photoDesc={photoData.explanation}
-                    />
-                </div>
-            </div>
+            />
+            <Description 
+                photoDesc={photoData.explanation}
+            />
         </div>
     )
 }
